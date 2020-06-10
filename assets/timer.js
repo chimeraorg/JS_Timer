@@ -32,6 +32,7 @@ class Timer {
       this.pause();
       if (this.onComplete) {
         this.onComplete();
+        window.location.reload();
       }
     } else {
       this.timeRemaining = this.timeRemaining - 0.05;
